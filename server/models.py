@@ -1,3 +1,4 @@
+
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
@@ -13,3 +14,4 @@ class Newsletter(db.Model):
 
     def __repr__(self):
         return f'<Newsletter {self.title}, published at {self.published_at}.>'
+
